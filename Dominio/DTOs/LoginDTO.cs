@@ -1,4 +1,6 @@
+using MinimalApi.Dominio.Entidades;
 namespace MinimalApi.DTOs;
+
 
 public class LoginDTO
 {
