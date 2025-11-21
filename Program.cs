@@ -28,12 +28,14 @@ builder.Services.AddDbContext<DbContexto>(options =>
 
 
 var app = builder.Build();
+
 #endregion
+
 #region Home
 
 //app.MapGet("/", () => Results.Json(new Home(), contentType: "application/json; charset=utf-8"));
 
- app.MapGet("/", () =>
+app.MapGet("/", () =>
 {
     var home = new MinimalApi.Dominio.ModelViews.Home();
     return Results.Content(
